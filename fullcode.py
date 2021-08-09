@@ -133,7 +133,7 @@ txt_folder = Path(b).rglob('*.txt')
 files = [x for x in txt_folder]
 
 
-'''for name in files:
+for name in files:
     with open(name, 'r+') as f:
         l = f.read()
         l = l.replace("\n", "").replace("\r", "").replace("exp:", " exp: ").replace(" , ", ",")
@@ -144,7 +144,7 @@ files = [x for x in txt_folder]
                 print('nu e bine')
         for line in a:
             L.append(dictionary(line))
-            pass'''
+            pass
 
 def processedLetter(l):
     l = l.replace("\n", "").replace("\r", "").replace("exp:", " exp: ").replace(" , ", ",")
@@ -273,7 +273,7 @@ print("DONE WRITING OUTPUT FILE")
 ##for dicti in L:
 ##  print(dicti)
 
-'''
+
 class Child:
     def __init__(self, name, address, gifts_wish, color):
         self.name = name
@@ -496,9 +496,8 @@ g = open('output.txt', 'w')
 for i in final_list:
     g.write("Child: {0}, Address: {1}, Gift: {3} {2}\n".format(i["name"], i["address"], i["gifts"], i["color"]))
 # cease operation
-g.close()'''
+g.close()
 
 
 print("--- %s seconds ---" % (time.time() - start_time))
-# print(gift_list[0].get_image())
-© 2021 GitHub, Inc.
+print(gift_list[0].get_image())
